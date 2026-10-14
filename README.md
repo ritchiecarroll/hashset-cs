@@ -4,7 +4,7 @@ The C# conversion of the Go module [`github.com/ritchiecarroll/hashset`](https:/
 v1.0.0, made by [go2cs](https://github.com/ritchiecarroll/go2cs). It is published on NuGet as
 [`nugetgo.github.com.ritchiecarroll.hashset`](https://www.nuget.org/packages/nugetgo.github.com.ritchiecarroll.hashset).
 
-PROOF: go2cs C# conversion of github.com/ritchiecarroll/hashset v1.0.0, published by its author, built on the Go
+go2cs C# conversion of github.com/ritchiecarroll/hashset v1.0.0, published by its author, built on the Go
 1.24.13 standard library, not affiliated with or endorsed by the Go project. Security: the Go standard library this package is built on includes no Go security fixes released after Go 1.24.13; review before any production use.
 
 ## What is here
