@@ -17,6 +17,7 @@ public static bool Add<T>(this HashSet<T> hs, T item) {
     if (hs.Contains(item)) {
         return false;
     }
+
     hs[item] = new EmptyStruct();
     return true;
 }
@@ -26,16 +27,19 @@ public static bool Remove<T>(this HashSet<T> hs, T item) {
         delete(hs, item);
         return true;
     }
+
     return false;
 }
 
 public static nint RemoveWhere<T>(this HashSet<T> hs, Func<T, bool> predicate) {
     nint removedCount = default!;
+
     foreach (var (k, _) in hs) {
         if (predicate(k) && hs.Remove(k)) {
             removedCount++;
         }
     }
+
     return removedCount;
 }
 
@@ -55,10 +59,12 @@ public static bool Contains<T>(this HashSet<T> hs, T item) {
 public static slice<T> Keys<T>(this HashSet<T> hs) {
     var keys = new slice<T>(len(hs));
     nint i = 0;
+
     foreach (var (k, _) in hs) {
         keys[i] = k;
         i++;
     }
+
     return keys;
 }
 
@@ -81,6 +87,7 @@ public static void SymmetricExceptWithSet<T>(this HashSet<T> hs, HashSet<T> othe
         hs.UnionWithSet(other);
         return;
     }
+
     foreach (var (_, v) in other.Keys()) {
         if (!hs.Remove(v)) {
             hs.Add(v);
@@ -96,10 +103,12 @@ public static void IntersectWithSet<T>(this HashSet<T> hs, HashSet<T> other) {
     if (len(hs) == 0) {
         return;
     }
+
     if (len(other) == 0) {
         hs.Clear();
         return;
     }
+
     foreach (var (k, _) in hs) {
         if (!other.Contains(k)) {
             hs.Remove(k);
@@ -125,11 +134,13 @@ public static bool SetEqualsSet<T>(this HashSet<T> hs, HashSet<T> other) {
     if (len(hs) != len(other)) {
         return false;
     }
+
     foreach (var (k, _) in other) {
         if (!hs.Contains(k)) {
             return false;
         }
     }
+
     return true;
 }
 
@@ -137,11 +148,13 @@ public static bool Overlaps<T>(this HashSet<T> hs, slice<T> other) {
     if (hs.IsEmpty()) {
         return false;
     }
+
     foreach (var (_, v) in other) {
         if (hs.Contains(v)) {
             return true;
         }
     }
+
     return false;
 }
 
@@ -157,14 +170,17 @@ public static bool IsSubsetOfSet<T>(this HashSet<T> hs, HashSet<T> other) {
     if (hs.IsEmpty()) {
         return true;
     }
+
     if (len(hs) > len(other)) {
         return false;
     }
+
     foreach (var (k, _) in hs) {
         if (!other.Contains(k)) {
             return false;
         }
     }
+
     return true;
 }
 
@@ -176,14 +192,17 @@ public static bool IsProperSubsetOfSet<T>(this HashSet<T> hs, HashSet<T> other) 
     if (hs.IsEmpty()) {
         return len(other) > 0;
     }
+
     if (len(hs) >= len(other)) {
         return false;
     }
+
     foreach (var (k, _) in hs) {
         if (!other.Contains(k)) {
             return false;
         }
     }
+
     return true;
 }
 
@@ -195,14 +214,17 @@ public static bool IsSupersetOfSet<T>(this HashSet<T> hs, HashSet<T> other) {
     if (len(other) == 0) {
         return true;
     }
+
     if (len(other) > len(hs)) {
         return false;
     }
+
     foreach (var (k, _) in other) {
         if (!hs.Contains(k)) {
             return false;
         }
     }
+
     return true;
 }
 
@@ -214,17 +236,21 @@ public static bool IsProperSupersetOfSet<T>(this HashSet<T> hs, HashSet<T> other
     if (hs.IsEmpty()) {
         return false;
     }
+
     if (len(other) == 0) {
         return true;
     }
+
     if (len(other) >= len(hs)) {
         return false;
     }
+
     foreach (var (k, _) in other) {
         if (!hs.Contains(k)) {
             return false;
         }
     }
+
     return true;
 }
 

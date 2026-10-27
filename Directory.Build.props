@@ -22,10 +22,10 @@
     <BaseOutputPath>$(Go2csArtifactsRoot)bin\$(Go2csArtifactToken)\</BaseOutputPath>
   </PropertyGroup>
 
-  <!-- Default the go2cs NuGet package version to the converter's Go release, floating on the
-       revision. Pin exactly by setting GoStdLibVersion here (or a -p: global) before build. -->
+  <!-- Default the go2cs NuGet package version to the newest release for the converter's Go minor.
+       Pin exactly by setting GoStdLibVersion here (or a -p: global) before build. -->
   <PropertyGroup Condition="'$(GoStdLibVersion)' == ''">
-    <GoStdLibVersion>1.24.13.*</GoStdLibVersion>
+    <GoStdLibVersion>1.26.*</GoStdLibVersion>
   </PropertyGroup>
 
   <!-- The compile surface of the go.* packages: the platform this tree was converted for. go.lib's

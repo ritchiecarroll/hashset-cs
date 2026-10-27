@@ -49,7 +49,7 @@ using static go.github.com.ritchiecarroll.hashset_package;
 // or has none - golib, the BCL and hand-written conversions - and reports its own C# position.
 
 // <GoSourcePositionMaps>
-[assembly: go.GoPositionMap("github.com/ritchiecarroll/hashset@v1.0.0/hashset.go", "hashset.cs", "AAk0goKCqoKCloKqgoKClqyChIKCqKyCqIKqgoKqgoKEgoKWqIKCvIKqgqqChIKWgoLOgqqGgpaCgpaCgs6CgryCrIKsgoKWgoKoroKCloKCqK6CqoKqhIKYgpaCgqiugqyEgpqCloKCqKyCqoSCmIKWgoKoroKshIKYgpqCloKCqA==")]
+[assembly: go.GoPositionMap("github.com/ritchiecarroll/hashset@v1.0.0/hashset.go", "hashset.cs", "AAk0goKCqoKCpoKqgoKCpqyClIKCuKyCqIKqgoKqgoKUgoKmqIKCvIKqgqqChIKmgoLOgqqGgqaCgqaCgs6CgryCrIKsgoKmgoK4roKCpoKCuK6CqoKqhIKogqaCgriugqyEgqqCpoKCuKyCqoSCqIKmgoK4roKshIKogqqCpoKCuA==")]
 // </GoSourcePositionMaps>
 
 namespace go.github.com.ritchiecarroll;
