@@ -32,7 +32,7 @@ public static bool Remove<T>(this HashSet<T> hs, T item) {
 }
 
 public static nint RemoveWhere<T>(this HashSet<T> hs, Func<T, bool> predicate) {
-    nint removedCount = default!;
+    nint removedCount = default;
 
     foreach (var (k, _) in hs) {
         if (predicate(k) && hs.Remove(k)) {
