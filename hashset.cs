@@ -69,7 +69,7 @@ public static slice<T> Keys<T>(this HashSet<T> hs) {
 }
 
 public static void ExceptWith<T>(this HashSet<T> hs, slice<T> other) {
-    foreach (var (_, v) in other) {
+    foreach (var (_, v) in range(other)) {
         delete(hs, v);
     }
 }
@@ -88,7 +88,7 @@ public static void SymmetricExceptWithSet<T>(this HashSet<T> hs, HashSet<T> othe
         return;
     }
 
-    foreach (var (_, v) in other.Keys()) {
+    foreach (var (_, v) in range(other.Keys())) {
         if (!hs.Remove(v)) {
             hs.Add(v);
         }
@@ -117,7 +117,7 @@ public static void IntersectWithSet<T>(this HashSet<T> hs, HashSet<T> other) {
 }
 
 public static void UnionWith<T>(this HashSet<T> hs, slice<T> other) {
-    foreach (var (_, v) in other) {
+    foreach (var (_, v) in range(other)) {
         hs.Add(v);
     }
 }
@@ -149,7 +149,7 @@ public static bool Overlaps<T>(this HashSet<T> hs, slice<T> other) {
         return false;
     }
 
-    foreach (var (_, v) in other) {
+    foreach (var (_, v) in range(other)) {
         if (hs.Contains(v)) {
             return true;
         }

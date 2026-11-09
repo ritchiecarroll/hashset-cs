@@ -9,7 +9,7 @@ Both sides of every reading were built with `-tags purego,math_big_pure_go,safe`
 
 | Package | Matched | Disclosed | Input digest | Proof |
 |:--|--:|--:|:--|:--|
-| `github.com/ritchiecarroll/hashset` | 37 | 0 | `sha256-5995efa2d354d53942d0aa98d61e59a12a32f1ec7226db5b6db274b21395140b` | [index.md](index.md) |
+| `github.com/ritchiecarroll/hashset` | 37 | 0 | `sha256-738aa1ee1fb1ad51db7a91a44298244374b84a6185745f2e06c9bdd25ba75333` | [index.md](index.md) |
 
 **Total: 37 matched · 0 disclosed** across 1 package(s).
 
