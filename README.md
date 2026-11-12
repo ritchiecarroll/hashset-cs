@@ -1,5 +1,7 @@
 # hashset-cs
 
+[![converted by go2cs](https://go2cs.net/images/go2cs-badge.svg)](https://go2cs.net)
+
 The C# conversion of the Go module [`github.com/ritchiecarroll/hashset`](https://github.com/ritchiecarroll/hashset)
 v1.0.0, made by [go2cs](https://github.com/ritchiecarroll/go2cs). It is published on NuGet as
 [`nugetgo.github.com.ritchiecarroll.hashset`](https://www.nuget.org/packages/nugetgo.github.com.ritchiecarroll.hashset);
