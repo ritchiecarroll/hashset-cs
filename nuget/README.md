@@ -4,7 +4,7 @@
 
 > go2cs C# conversion of [github.com/ritchiecarroll/hashset](https://github.com/ritchiecarroll/hashset/tree/v1.0.0) v1.0.0, published by its author, built on the Go 1.26.10 standard library; not affiliated with or endorsed by the Go project. Security: the Go standard library this package is built on includes no Go security fixes released after Go 1.26.10; review before any production use.
 
-[![Tests](https://img.shields.io/badge/Tests-37_matched_%2F_0_disclosed-brightgreen?logo=go)](https://github.com/ritchiecarroll/hashset-cs/blob/nuget-1.0.0.5/VALIDATION.md) [![C# Source](https://img.shields.io/badge/C%23_Source-@1.0.0.5-512BD4?logo=dotnet)](https://github.com/ritchiecarroll/hashset-cs/tree/nuget-1.0.0.5)\
+[![converted by go2cs](https://go2cs.net/images/go2cs-badge.svg)](https://go2cs.net) [![Tests](https://img.shields.io/badge/Tests-37_matched_%2F_0_disclosed-brightgreen?logo=go)](https://github.com/ritchiecarroll/hashset-cs/blob/nuget-1.0.0.5/VALIDATION.md) [![C# Source](https://img.shields.io/badge/C%23_Source-@1.0.0.5-512BD4?logo=dotnet)](https://github.com/ritchiecarroll/hashset-cs/tree/nuget-1.0.0.5)\
 [![Go module](https://img.shields.io/badge/Go_module-@v1.0.0-00ADD8?logo=go)](https://pkg.go.dev/github.com/ritchiecarroll/hashset@v1.0.0) [![go2cs](https://img.shields.io/badge/go2cs-@1.26.10.3-512BD4?logo=dotnet)](https://github.com/ritchiecarroll/go2cs/tree/nuget-1.26.10.3)
 
 Converted from [github.com/ritchiecarroll/hashset](https://github.com/ritchiecarroll/hashset/tree/v1.0.0) source to C# in [ritchiecarroll/hashset-cs](https://github.com/ritchiecarroll/hashset-cs/tree/nuget-1.0.0.5); licensed under MIT — see [LICENSE](https://github.com/ritchiecarroll/hashset-cs/blob/nuget-1.0.0.5/LICENSE).
